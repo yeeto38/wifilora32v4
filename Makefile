@@ -1,5 +1,4 @@
-ENV=seeed_xiao_esp32c3
-# ENV=esp32-c3-devkitm-1
+ENV=heltec_wifi_lora_32_V4
 
 build:
 	pio run -e $(ENV)
@@ -15,7 +14,7 @@ clean:
 
 fullclean:
 	rm -rf .pio
-	rm src/CMakeLists.txt CMakelists.txt sdkconfig.seeed_xiao_esp32c3 sdkconfig.seeed_xiao_esp32c3.old sdkconfig.esp32-c3-devkitm-1 sdkconfig.esp32-c3-devkitm-1.old
+	rm src/CMakeLists.txt CMakelists.txt 
 
 test: clean
 	pio test -vvv
